@@ -20,6 +20,7 @@ align_dir=${out_dir}/alignments
 set -x
 # preprocess steps
 # 4.1
+# you can use the latest vad by `--vad_version snakers4/silero-vad`
 python -m svecalign.preprocess.segment \
     ${metadata} ${seg_dir} \
     --lang ${src_lang} \
@@ -30,7 +31,8 @@ python -m svecalign.preprocess.segment \
     ${metadata} ${seg_dir} \
     --lang ${tgt_lang} \
     --use_tgt \
-    --vad_version snakers4/silero-vad:v4.0
+    --vad_version snakers4/silero-vad:v4.0 \
+    --cache_dir ./vad_cache
 
 # 4.2
 python -m svecalign.preprocess.detect_untranslate_segs \
