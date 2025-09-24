@@ -1,7 +1,10 @@
 # Speech Vecalign
 
-This repository contains code and data for the paper **Speech Vecalign: an Embedding-based Method for Aligning Parallel Speech Documents** 
-(accepted by EMNLP 2025 main; to appear soon).
+
+[![arXiv](https://img.shields.io/badge/arXiv-2509.18360-b31b1b.svg)](https://arxiv.org/abs/2509.18360)
+
+This repository contains code and data for the paper [**Speech Vecalign: an Embedding-based Method for Aligning Parallel Speech Documents**](https://arxiv.org/abs/2509.18360) 
+(accepted by EMNLP 2025 main).
 
 ## Introduction
 
@@ -497,7 +500,15 @@ This codebase is partially based on [Vecalign](https://github.com/thompsonb/veca
 ## Citation
 If you find this repository helpful, please cite the following article:
 ```
-TODO
+@misc{meng2025speechvecalignembeddingbasedmethod,
+      title={{Speech Vecalign: an Embedding-based Method for Aligning Parallel Speech Documents}}, 
+      author={Chutong Meng and Philipp Koehn},
+      year={2025},
+      eprint={2509.18360},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2509.18360}, 
+}
 ```
 
 ## License
